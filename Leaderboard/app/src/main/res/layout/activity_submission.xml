@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SubmissionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/submit_activity_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:src="@drawable/gads"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/project_submission_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/project_submission_header"
+        android:textAlignment="center"
+        android:textColor="@color/colorOrange"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+        android:id="@+id/header_buttom_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/border_color_orange_with_gradient"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/project_submission_header"
+        app:layout_constraintStart_toStartOf="@+id/project_submission_header"
+        app:layout_constraintTop_toBottomOf="@+id/project_submission_header" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_buttom_line">
+
+        <EditText
+            android:id="@+id/first_name_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners_edit_text"
+            android:hint="@string/first_name_hint"
+            android:padding="8dp"
+            android:textColorHint="@color/colorDarkGray"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+        <EditText
+            android:id="@+id/last_name_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners_edit_text"
+            android:hint="@string/last_name_hint"
+            android:padding="8dp"
+            android:textColorHint="@color/colorDarkGray"
+            tools:layout_editor_absoluteX="354dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/rounded_corners_edit_text"
+        android:ems="10"
+        android:hint="@string/email_address_hint"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textColorHint="@color/colorDarkGray"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/github_link_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rounded_corners_edit_text"
+        android:ems="10"
+        android:hint="@string/github_link_text_hint"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColorHint="@color/colorDarkGray"
+        app:layout_constraintEnd_toEndOf="@+id/email_text"
+        app:layout_constraintStart_toStartOf="@+id/email_text"
+        app:layout_constraintTop_toBottomOf="@+id/email_text" />
+
+    <TextView
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/submit_button"
+        android:padding="5dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="@string/button_open_submit_activity_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/github_link_text"
+        app:layout_constraintStart_toStartOf="@+id/github_link_text"
+        app:layout_constraintTop_toBottomOf="@+id/github_link_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

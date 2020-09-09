@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LEADERBOARD</string>
+    <string name="tab_text_1">Learning Leaders</string>
+    <string name="tab_text_2">Skill IQ Leaders</string>
+    <string name="learning_hours_text">learning hours, </string>
+    <string name="button_open_submit_activity_text">Submit</string>
+    <string name="project_submission_header">Project Submission</string>
+    <string name="dummy_text">dummy_text</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="github_link_text_hint">Project on GITHUB (link)</string>
+    <string name="dialog_question_text">Are You Sure</string>
+    <string name="dialog_submit_button_text">Yes</string>
+    <string name="submission_not_successful">Submission not Successful</string>
+    <string name="submission_successful_text">Submission Successful</string>
+</resources>
